@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="container mx-auto">
+        <div class="bg-green-500 text-white rounded-2xl mt-6 p-8 w-[1200px] mx-auto flex">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Хотите бесплатную консультацию?</h2>
+                <h2 class="text-3xl font-bold mb-2">Оставляйте заявку</h2>
+                <p class="text-lg mt-8 mr-7">Оставляйте заявку и наши менеджеры свяжутся с Вами в ближайшее время</p>
+            </div>
+            <div>
+                <form class="space-y-4">
+                  <div>
+                    <label for="name" class="block text-sm font-medium">Ваше имя</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Ваше имя"
+                      class="w-full mt-1 p-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-700"
+                    />
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-sm font-medium">Ваш телефон</label>
+                    <input
+                      type="text"
+                      id="phone"
+                      placeholder="Ваш телефон"
+                      class="w-full mt-1 p-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-700"
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-medium">Ваш e-mail</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Ваш e-mail"
+                      class="w-full mt-1 p-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-700"
+                    />
+                  </div>
+                  <div class="flex">
+                      <div class="text-base text-gray-100 mt-4 mx-3">
+                        Нажимая кнопку вы даете согласие на обработку персональных данных в соответствии с политикой конфиденциальности
+                      </div>
+                      <div>
+                          <button
+                            type="submit"
+                            class="bg-black text-white py-2 px-6 rounded hover:bg-green-500 mt-4 mr-5">
+                            Отправить
+                          </button>
+                      </div>
+                      </div>
+                </form>
+            </div>
+        </div>  
+    </section>
+</body>
+</html>
